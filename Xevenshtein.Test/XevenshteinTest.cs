@@ -8,7 +8,7 @@ namespace Xevenshtein.Test
     public class XevenshteinTest
     {
         [TestMethod]
-        public void TestDistance_MustSucceed()
+        public void TestDistance_Succeed()
         {
             string a = "a";
             string b = "b";
@@ -21,9 +21,9 @@ namespace Xevenshtein.Test
 
 
         [TestMethod]
-        public void TestDistance_MustSucceed()
+        public void TestDistance_Fail()
         {
-            string a = "a";
+            string a = "b";
             string b = "b";
             int expectedResult = 1;
 
