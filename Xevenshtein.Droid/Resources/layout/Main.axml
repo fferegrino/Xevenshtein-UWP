@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="@string/FirstWordText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FirstWordTextInput"
+        android:text="XAMARIN" />
+    <TextView
+        android:text="@string/SecondWordText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SecondWordTextInput"
+        android:text="SAMARIN" />
+    <Button
+        android:text="@string/ComputeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ComputeButton" />
+    <TextView
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ResultTextView"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="100sp" />
+</LinearLayout>
