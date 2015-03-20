@@ -2,5 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xevenshtein.Forms.MainPage">
-	<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout>
+    <Label Text="First word"></Label>
+    <Entry x:Name="FirstWordTextInput" Text="XAMARIN"></Entry>
+    <Label Text="Second word"></Label>
+    <Entry x:Name="SecondWordTextInput" Text="SAMARIN"></Entry>
+    <Button x:Name="ComputeButton"  Text="Compute" Clicked="OnComputeButtonClicked"></Button>
+    <Label x:Name="ResultTextView"
+           VerticalOptions="CenterAndExpand" FontSize="100" HorizontalOptions="CenterAndExpand" Text="0"></Label>
+  </StackLayout>
 </ContentPage>

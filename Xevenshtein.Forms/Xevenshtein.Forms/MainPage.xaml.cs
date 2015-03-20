@@ -14,5 +14,11 @@ namespace Xevenshtein.Forms
         {
             InitializeComponent();
         }
+
+        void OnComputeButtonClicked(object sender, EventArgs e)
+        {
+            var resilt = Xevenshtein.Core.Levenshtein.Compute(FirstWordTextInput.Text, SecondWordTextInput.Text);
+            ResultTextView.Text = resilt.ToString();
+        }
     }
 }
