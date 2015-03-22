@@ -16,12 +16,13 @@ namespace Xevenshtein.Droid
         private Button computeButton;
         private EditText firstWordTextInput, secondWordTextInput;
         private TextView resultTextView;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+
             computeButton = FindViewById<Button>(Resource.Id.ComputeButton);
             firstWordTextInput = FindViewById<EditText>(Resource.Id.FirstWordTextInput);
             secondWordTextInput = FindViewById<EditText>(Resource.Id.SecondWordTextInput);
