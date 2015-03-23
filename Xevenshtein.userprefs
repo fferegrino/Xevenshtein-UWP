@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="Xevenshtein.Core\Xevenshtein.Core.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Xevenshtein.Test\XevenshteinTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Xevenshtein.Droid\MainActivity.cs">
     <Files>
       <File FileName="Xevenshtein.Core\Levenshtein.cs" Line="1" Column="1" />
       <File FileName="Xevenshtein.Test\XevenshteinTest.cs" Line="1" Column="1" />
+      <File FileName="Xevenshtein.Droid\MainActivity.cs" Line="6" Column="6" />
+      <File FileName="Xevenshtein.Droid\Properties\AndroidManifest.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

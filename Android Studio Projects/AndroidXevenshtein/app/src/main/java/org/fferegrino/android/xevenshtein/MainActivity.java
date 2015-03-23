@@ -20,7 +20,6 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
 
         computeButton = (Button) findViewById(R.id.ComputeButton);
@@ -30,8 +29,10 @@ public class MainActivity extends ActionBarActivity {
 
         computeButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String result = new  Integer(Levenshtein.Compute(firstWordTextInput.getText().toString(), secondWordTextInput.getText().toString())).toString();
-                resultTextView.setText(result.toCharArray(),0, result.length());
+                int result = Levenshtein.Compute(
+                        firstWordTextInput.getText().toString(),
+                        secondWordTextInput.getText().toString());
+                resultTextView.setText(Integer.toString(result));
             }
         });
     }

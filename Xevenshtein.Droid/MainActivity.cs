@@ -20,7 +20,6 @@ namespace Xevenshtein.Droid
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
             SetContentView(Resource.Layout.Main);
 
             computeButton = FindViewById<Button>(Resource.Id.ComputeButton);
@@ -30,7 +29,9 @@ namespace Xevenshtein.Droid
 
             computeButton.Click += (s, a) =>
             {
-                var resultado = Levenshtein.Compute(firstWordTextInput.Text, secondWordTextInput.Text);
+                var resultado = Levenshtein.Compute(
+					firstWordTextInput.Text,
+					secondWordTextInput.Text);
                 resultTextView.Text = resultado.ToString();
             };
         }
