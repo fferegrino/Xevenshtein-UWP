@@ -5,9 +5,12 @@ namespace Xevenshtein.Core
     public static class Levenshtein
     {
         /// <summary>
-        /// Compute the distance between two strings.
-        /// Taken from: http://www.dotnetperls.com/levenshtein
+        /// Compute the distance between two strings using the Levenshtein distance algorithm
+        /// Implementation taken from: http://www.dotnetperls.com/levenshtein
         /// </summary>
+        /// <param name="s">First string</param>
+        /// <param name="t">Second string</param>
+        /// <returns></returns>
         public static int Compute(string s, string t)
         {
             int n = s.Length;
