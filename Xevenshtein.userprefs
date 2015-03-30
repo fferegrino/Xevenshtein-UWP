@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="Xevenshtein.Core\Xevenshtein.Core.csproj">
+﻿<Properties StartupItem="Xevenshtein.iOS/Xevenshtein.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Xevenshtein.Droid\MainActivity.cs">
     <Files>
