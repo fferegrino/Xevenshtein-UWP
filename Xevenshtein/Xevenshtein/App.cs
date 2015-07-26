@@ -34,9 +34,21 @@ namespace Xevenshtein
             mainLayout.Children.Add(secondStringEntry);
             mainLayout.Children.Add(computeButton);
             mainLayout.Children.Add(computationResultLabel);
+			computeButton.Clicked += ComputeButton_Clicked;
 
             xevenshteinMainPage.Content = mainLayout;
             MainPage = xevenshteinMainPage;
+
+
+			computeButton.Clicked += ComputeButton_Clicked;
+        }
+
+        void ComputeButton_Clicked (object sender, EventArgs e)
+		{
+			string str1 = firstStringEntry.Text;
+			string str2 = secondStringEntry.Text;
+			int distance = Xevenshtein.Algorithm.LevenshteinDistance.Compute(str1, str2);
+			computationResultLabel.Text = "Distance: " + distance;
         }
 
         protected override void OnStart()
